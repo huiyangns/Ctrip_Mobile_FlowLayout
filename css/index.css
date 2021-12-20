@@ -1,0 +1,73 @@
+body {
+    font: normal 16px/1.5 PingFangSC-regular,Tahoma,Lucida Grande,Verdana,Microsoft Yahei,STXihei,hei;
+    color: #000;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    -moz-user-select: none;
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+a {
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+.search-index {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 44px;
+}
+.search {
+    flex: 1;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 11px 14px 12px 0;
+    font-size: 12px;
+    color:#666;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+.search::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    background: url(../images/sprite.png) no-repeat -58px -278px;
+    background-size: 104px auto;
+    margin:5px;
+    vertical-align: middle;
+}
+.search-index a {
+    width: 40px;
+    height: 44px;
+    color:#099fde;
+    font-size: 12px;
+    text-align: center;
+}
+.search-index a::before {
+    content:"";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -58px -191px;
+    background-size: 104px auto;
+    margin:4px auto 0;
+}
+
+.focus {
+    padding-top: 44px;
+}
+.focus img {
+    width: 100%;
+}
